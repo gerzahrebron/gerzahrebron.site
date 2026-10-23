@@ -1,0 +1,99 @@
+
+.specular-button {
+  --sb-radius: 18px;
+  --sb-tint: #ffffff;
+  --sb-tint-opacity: 0.04;
+  --sb-blur: 0px;
+  --sb-text-color: #f5f5f5;
+
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 0;
+  border: 0;
+  border-radius: var(--sb-radius);
+  font: inherit;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--sb-text-color);
+  background: color-mix(in srgb, var(--sb-tint) calc(var(--sb-tint-opacity) * 100%), transparent);
+  box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(var(--sb-blur));
+  backdrop-filter: blur(var(--sb-blur));
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.specular-button:active {
+  transform: scale(0.97);
+}
+
+.specular-button:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--sb-text-color) 55%, transparent);
+  outline-offset: 3px;
+}
+
+.specular-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.specular-button:disabled:active {
+  transform: none;
+}
+
+.specular-button--sm {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+.specular-button--md {
+  padding: 14px 28px;
+  font-size: 1rem;
+}
+
+.specular-button--lg {
+  padding: 18px 38px;
+  font-size: 1.125rem;
+}
+
+.specular-button__light {
+  position: absolute;
+  inset: -24px;
+  z-index: 1;
+  display: block;
+  width: calc(100% + 48px);
+  height: calc(100% + 48px);
+  pointer-events: none;
+}
+
+.specular-button__label {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: inherit;
+}
+
+
+.site-navigator a.specular-button,.orbit-pause.specular-button{position:relative;isolation:isolate;border:0;border-radius:18px;background:rgba(255,255,255,.04);color:#f5f5f5;box-shadow:0 10px 24px -14px #0007;overflow:visible;font-weight:500;letter-spacing:.01em}
+.site-navigator a.specular-button{padding:16px 27px;min-height:50px;font-size:13px}
+.site-navigator a.specular-button:hover,.orbit-pause.specular-button:hover{background:rgba(255,255,255,.055);transform:none}
+.orbit-pause.specular-button{padding:10px 18px;min-height:36px}
+.site-navigator a.specular-button:focus-visible,.orbit-pause.specular-button:focus-visible{outline:2px solid #aaa;outline-offset:4px}
+.site-navigator a.specular-button:active,.orbit-pause.specular-button:active{transform:scale(.97)}
+@media(max-width:650px){.site-navigator a.specular-button{padding:12px 17px;min-height:40px;font-size:11px}.orbit-pause.specular-button{padding:8px 12px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.specular-button{transition:none}}
+
+.feature-pills{gap:12px;max-width:390px}
+.feature-pills>span.specular-button{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;min-height:42px;border:0;border-radius:18px;background:rgba(255,255,255,.04);color:#f5f5f5;font-size:12px;font-weight:500;line-height:1.2;letter-spacing:.01em;overflow:visible;box-shadow:0 10px 24px -14px #0007;cursor:default}
+.feature-pills>span.specular-button:hover{background:rgba(255,255,255,.055)}
+.feature-pills .specular-button__label{padding:0;border:0;border-radius:0;background:none;font:inherit;color:inherit;line-height:inherit}
+@media(max-width:650px){.feature-pills{gap:10px}.feature-pills>span.specular-button{padding:11px 14px;min-height:38px;font-size:11px}}
+
