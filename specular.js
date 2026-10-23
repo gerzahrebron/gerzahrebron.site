@@ -422,7 +422,7 @@ const mountSpecularButton = (button, {
   };
  return initialize();
 };
-document.querySelectorAll('.site-navigator a, .orbit-pause, .feature-pills > span').forEach(button => {
+document.querySelectorAll('.site-navigator .navigator-links a, .orbit-pause, .feature-pills > span').forEach(button => {
  button.classList.add('specular-button');
  const label = document.createElement('span');
  label.className = 'specular-button__label';

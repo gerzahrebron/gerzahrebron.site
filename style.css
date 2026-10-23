@@ -225,3 +225,13 @@ html,body{max-width:100%;overflow-x:clip}
 #apps-particles{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;-webkit-mask-image:linear-gradient(transparent,#000 12%,#000 85%,transparent);mask-image:linear-gradient(transparent,#000 12%,#000 85%,transparent)}
 #apps-particles canvas{position:absolute;inset:0;display:block;width:100%;height:100%}
 
+/* Selected Gerzahrebron identities, cropped from the original design board. */
+.site-navigator{justify-content:space-between;flex-wrap:nowrap;gap:30px}
+.site-navigator .navigator-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px}
+.site-navigator a.logo-link{flex:none;display:block;width:112px;height:66px;padding:0;margin:0;background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;transform:none}
+.header-logo{display:block;width:100%;height:100%;mix-blend-mode:screen}
+.contact-top{align-items:center;gap:34px;flex-wrap:wrap}
+.contact-wordmark{display:block;width:330px;max-width:100%;height:auto;aspect-ratio:710/115;mix-blend-mode:screen}
+@media(max-width:1000px){.site-navigator{gap:20px}.site-navigator a.logo-link{width:95px}.site-navigator .navigator-links{gap:8px}}
+@media(max-width:650px){.site-navigator{flex-direction:column;gap:14px}.site-navigator a.logo-link{width:88px;height:50px;align-self:flex-start}.site-navigator .navigator-links{justify-content:flex-end;gap:7px;width:100%}.site-navigator .navigator-links a{padding:9px 12px}.hero-content{padding-top:225px}.contact-wordmark{width:270px}.contact-top{gap:18px;align-items:flex-start;flex-direction:column}}
+
