@@ -259,3 +259,5 @@ html,body{max-width:100%;overflow-x:clip}
 .hero .button,.hero .button:hover{box-shadow:none}
 .hero .button:before{display:none}
 
+.site-navigator a.logo-link{mix-blend-mode:normal;background:transparent!important}.header-wordmark{background:transparent}
+
