@@ -254,3 +254,8 @@ html,body{max-width:100%;overflow-x:clip}
 .hero .button:before{content:'';position:absolute;inset:-22px -26px;z-index:-1;border-radius:50%;background:radial-gradient(ellipse,#ffffff20,transparent 70%);filter:blur(9px);pointer-events:none}
 .hero .button:hover{box-shadow:0 0 18px #ffffff30,0 0 42px #ffffff18}
 
+/* No diffuse glow in the lower hero area. */
+#ascii{background:none!important}
+.hero .button,.hero .button:hover{box-shadow:none}
+.hero .button:before{display:none}
+
