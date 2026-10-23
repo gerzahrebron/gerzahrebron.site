@@ -235,3 +235,9 @@ html,body{max-width:100%;overflow-x:clip}
 @media(max-width:1000px){.site-navigator{gap:20px}.site-navigator a.logo-link{width:95px}.site-navigator .navigator-links{gap:8px}}
 @media(max-width:650px){.site-navigator{flex-direction:column;gap:14px}.site-navigator a.logo-link{width:88px;height:50px;align-self:flex-start}.site-navigator .navigator-links{justify-content:flex-end;gap:7px;width:100%}.site-navigator .navigator-links a{padding:9px 12px}.hero-content{padding-top:225px}.contact-wordmark{width:270px}.contact-top{gap:18px;align-items:flex-start;flex-direction:column}}
 
+/* Transparent vector orbit identity, with no raster background. */
+.contact-orbit-logo{display:block;flex:none;width:152px;height:auto;object-fit:contain;background:transparent}
+.contact-top{flex-wrap:nowrap;gap:28px}
+.header-logo{object-fit:contain;mix-blend-mode:normal}
+@media(max-width:650px){.contact-orbit-logo{width:120px}.contact-top{flex-direction:row;align-items:center;gap:20px}}
+
