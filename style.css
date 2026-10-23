@@ -247,3 +247,10 @@ html,body{max-width:100%;overflow-x:clip}
 @media(max-width:1000px){.site-navigator a.logo-link{width:190px;height:46px}}
 @media(max-width:650px){.site-navigator a.logo-link{width:185px;height:38px}}
 
+/* Keep the ASCII field visible; concentrate the light around the CTA. */
+#ascii{background:none;bottom:0;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.12) 18%,#000 48%,#000 90%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.12) 18%,#000 48%,#000 90%,transparent 100%)}
+.hero-shade{background:linear-gradient(90deg,#0005,transparent 85%),linear-gradient(0deg,#000,transparent 8%,transparent 70%,#000 98%)}
+.hero .button{position:relative;isolation:isolate;box-shadow:0 0 14px #ffffff20,0 0 36px #ffffff12}
+.hero .button:before{content:'';position:absolute;inset:-22px -26px;z-index:-1;border-radius:50%;background:radial-gradient(ellipse,#ffffff20,transparent 70%);filter:blur(9px);pointer-events:none}
+.hero .button:hover{box-shadow:0 0 18px #ffffff30,0 0 42px #ffffff18}
+

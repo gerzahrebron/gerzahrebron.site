@@ -832,5 +832,5 @@ const mountGradientASCII = (container, {
   return cleanup;
 };
 
-mountGradientASCII(document.getElementById('ascii'), { colors: ['#171717', '#ffffff', '#c4c4c4', '#737373'], shape: 'horizon', cellSize: 16, density: 0.72, speed: 0.45, flicker: 0.12, grain: 0.025, glow: 0.12, gradientOpacity: 0.7, dpr: 1.5 });
+mountGradientASCII(document.getElementById('ascii'), { colors: ['#171717', '#ffffff', '#c4c4c4', '#737373'], shape: 'horizon', cellSize: 16, density: 0.72, speed: 0.45, flicker: 0.12, grain: 0.025, glow: 0.04, gradientOpacity: 0, dpr: 1.5 });
 
